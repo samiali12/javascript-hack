@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+
+}
+.game__container{
+    display: flex;
+    height:80vh;
+    width:70%;
+    box-shadow: 5px 5px 5px blueviolet;
+}
+.left__player{
+    display:flex;
+    flex-direction: column;
+    height:inherit;
+    width:50%;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+.right__player{
+    display: flex;
+    flex-direction: column;
+    height:inherit;
+    width:50%;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+.left__player__info{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    margin:auto;
+}
+.right__player__info{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    margin:auto;
+}
+.current__score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width:100px;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.btn {
+    outline:none;
+    color: #444;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.2s;
+  
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+  
+    padding: 0.7rem;
+    border-radius: 50rem;
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+
+  }
+.btn:active{
+    box-shadow: 0  37px 20px -20px rgba(0, 0, 0, 0.2);
+    transform: translate(0, -10px)
+}
+img{
+    width:55px;
+}
+.controls{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:60vh;
+    width:15%;
+}
+input{
+    outline:none;
+    border:none;
+    padding:10px;
+    background-color: inherit;
+}
+.winner__player{
+    background: rgb(21, 57, 92);
+}

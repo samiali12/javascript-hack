@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+    <link href="stylesheet.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="game__container">
+            <div class="left__player player__0 active__0" id="left__player__0">
+                <div class="left__player__info">
+                    <h3 id="right__player__name">Player 1 </h3>
+                    <h2 id="total__score__0" class="total__score">0</h2>
+                    <p id="player__0" class="current__score">0</p>
+                </div>
+            </div>
+
+            <div class="right__player player__1 active__1" id="left__player__1">
+                <div class="right__player__info">
+                    <h3 id="right__player__name">Player 2 </h3>
+                    <h2 id="total__score__1">0</h2>
+                    <p id="player__1"class="current__score">0</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <button onclick="init()" class="btn" > New Game</button>
+            <img src="dice-5.png" alt="Playing dice" class="dice" />
+            <button onclick="diceRolling()" class="btn">🎲  Roll Dice</button>
+            <button onclick="holdPlayer()" class="btn">Hold</button>
+        </div>
+
+    </div>
+  
+    <script src="app.js"> </script>
+</body>
+</html>
